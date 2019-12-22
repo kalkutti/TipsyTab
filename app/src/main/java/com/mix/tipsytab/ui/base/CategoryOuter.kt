@@ -3,13 +3,13 @@ package com.mix.tipsytab.ui.base
 import com.mix.tipsytab.ui.base.abstractModels.IRcmp
 
 class CategoryOuter : IRcmp {
-    private var categories: MutableList<CategInternal>? = null  // CategInternal wraps fundamental class CategDetail
+    private var categories: MutableList<CategDetail>? = null
 
-    fun getCategory() : MutableList<CategInternal>?{
+    fun getCategories() : MutableList<CategDetail>?{
         return categories
     }
 
-    fun setCategory(categories: MutableList<CategInternal>){
+    fun setCategories(categories: MutableList<CategDetail>){
         this.categories = categories
     }
 
